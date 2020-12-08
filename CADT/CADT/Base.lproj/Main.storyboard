@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17700" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G8x-uu-cmw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Campus Robot-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CADT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="epuck" translatesAutoresizingMaskIntoConstraints="NO" id="GCI-Gy-WFJ">
+                                <rect key="frame" x="39" y="128" width="336" height="277"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="277" id="GUp-f4-Z2n"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mie-dN-G5M">
+                                <rect key="frame" x="50" y="438" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Free" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2o-NG-71S">
+                                <rect key="frame" x="330" y="438" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="is0-aN-3tm">
+                                <rect key="frame" x="0.0" y="646" width="414" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What to bring:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sld-IO-gk2">
+                                <rect key="frame" x="50" y="539" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GCI-Gy-WFJ" secondAttribute="trailing" constant="39" id="49E-D1-ael"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e2o-NG-71S" secondAttribute="trailing" constant="50" id="7FG-qa-bUH"/>
+                            <constraint firstItem="Mie-dN-G5M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Bj5-VY-0L6"/>
+                            <constraint firstItem="e2o-NG-71S" firstAttribute="top" secondItem="GCI-Gy-WFJ" secondAttribute="bottom" constant="33" id="IQu-TC-Dlk"/>
+                            <constraint firstItem="GCI-Gy-WFJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="KWc-4e-fw1"/>
+                            <constraint firstItem="is0-aN-3tm" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ljt-v9-5YF"/>
+                            <constraint firstItem="sld-IO-gk2" firstAttribute="top" secondItem="Mie-dN-G5M" secondAttribute="bottom" constant="80" id="MMl-7N-3lZ"/>
+                            <constraint firstItem="is0-aN-3tm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gt0-JJ-4Yj"/>
+                            <constraint firstItem="e2o-NG-71S" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Mie-dN-G5M" secondAttribute="trailing" constant="8" symbolic="YES" id="i3c-TZ-VdZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sld-IO-gk2" secondAttribute="trailing" symbolic="YES" id="jCS-z0-F10"/>
+                            <constraint firstItem="GCI-Gy-WFJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="lJE-Sf-19f"/>
+                            <constraint firstItem="Mie-dN-G5M" firstAttribute="top" secondItem="GCI-Gy-WFJ" secondAttribute="bottom" constant="33" id="o5I-fZ-IZh"/>
+                            <constraint firstItem="is0-aN-3tm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="shG-4b-1T2"/>
+                            <constraint firstItem="sld-IO-gk2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="ycT-9Z-WyW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Campus Robot" id="tSl-dc-Om6"/>
+                    <connections>
+                        <outlet property="pickerView" destination="is0-aN-3tm" id="Eux-Bg-s9v"/>
+                        <outlet property="statusLabel" destination="e2o-NG-71S" id="4xQ-mT-WcZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="803.57142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hMR-iD-LBK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G8x-uu-cmw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jnc-md-x1B">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemIndigoColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hHv-PU-eB8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LA0-ZW-oBQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="epuck" width="1800" height="1600"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
